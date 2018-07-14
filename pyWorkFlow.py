@@ -3,13 +3,13 @@ import pprint, time, json, sys
 from subprocess import call
 global helper_msg_block
 helper_msg_block="""
-   --- README of library-run ---
+   --- README of WorkFlow Framework v2.3 ---
  Title:
-    General class for bio-info-misc project
+    WorkFlow is a framework to package some basic function into python class
 
  Usage:
-    import libWorkFlow
-    class <CLASS_NAME>(libWorkFlow.workflow):
+    import pyWorkFlow
+    class <CLASS_NAME>(pyWorkFlow.workflow):
 
         def personalize(self):
             # self.testing = True
@@ -104,7 +104,7 @@ class workflow:
 
         self.comand_line_list = ['echo','wahaha']
 
-        self.script_name = "libWorkFlow.py"
+        self.script_name = "pyWorkFlow.py"
         self.requested_config_dict = {
             "prefix/wawa" : "haha/wulala"
         }
