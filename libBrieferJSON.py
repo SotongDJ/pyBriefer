@@ -1,6 +1,6 @@
 import pprint,json
-import libWorkFlow
-class heading(libWorkFlow.workflow):
+import pyWorkFlow
+class heading(pyWorkFlow.workflow):
     def redirecting(self):
         """"""
     def actor(self):
