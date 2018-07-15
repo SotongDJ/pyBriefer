@@ -1,12 +1,12 @@
 import pprint,json
 import pyWorkFlow
 class heading(pyWorkFlow.workflow):
-    def redirecting(self):
-        """"""
     def actor(self):
         """"""
     def personalize(self):
         # self.testing = True
+        self.type = "library"
+
         self.helper_msg_str = "libJsonHeader.heading"
 
         self.requested_argv_dict = {}
