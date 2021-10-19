@@ -1,3 +1,5 @@
+import argparse, json
+
 def brief(obj,item=4,prefix=""):
     if type(obj) == type(dict()):
         if len(obj.keys()) > item:
@@ -30,3 +32,12 @@ def brief(obj,item=4,prefix=""):
             print(prefix+"  count[{}]: {}{}".format(len(obj_list),", ".join(format_list),end_str))
     else:
         print(prefix+"  Content: \"{}\" {}".format(obj,type(obj)))
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser('JSON/Dictionary summary')
+    parser.add_argument('-i', '--input', type=str, required = True,
+                        help='input JSON')
+    args = parser.parse_args()
+
+    print(F"\"{args.input}\"")
+    brief(json.load(open(args.input)))
