@@ -1,6 +1,6 @@
 import argparse, json
 
-def brief(obj,item=4,prefix=""):
+def brief(obj, item = 4, prefix = ""):
     if type(obj) == type(dict()):
         if len(obj.keys()) > item:
             key_list = list(obj.keys())[:item]
